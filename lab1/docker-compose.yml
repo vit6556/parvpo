@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  lab1:
+    container_name: lab1
+    build: .
+    command: /bin/sh -c "./git/lab1/lab1.out > results/output.txt"
+    volumes:
+      - ./results:/parvpo/results
